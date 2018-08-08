@@ -22,7 +22,7 @@ tr:nth-child(odd) {
 
 /* Make table headers bold text with red font */
 th{
-  font-weight: bold;
+  font-weight: bolder;
   color: red;
 }
 
@@ -62,7 +62,7 @@ blockquote {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
-} */
+}  */
 
 
 /* Removed miniture image from corner of team info */
@@ -78,6 +78,7 @@ img {
  position: absolute;
  down: 90px;
  left: 50px;
+ z-index: -1;
 }
 
 /* Make the first quarterback bold font  */
