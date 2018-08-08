@@ -1,6 +1,6 @@
 
-/* Make all headers black text and sans serif font */
-h1, h2, h3{
+/* Make all headers black (unfortunetly favorite color) text and sans serif font */
+h1, h2, h3, h4, h5{
   color: black;
   font-family: sans-serif;
 }
@@ -9,6 +9,15 @@ h1, h2, h3{
 table, th, td{
   text-align: center;
   border-style: ridge;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even){
+  background-color: lightblue;
+}
+
+tr:nth-child(odd) {
+  background-color: yellow
 }
 
 /* Make table headers bold text with red font */
@@ -42,20 +51,36 @@ blockquote {
 }
 
 /* Add logo to broncos information */
-body > ul > li:first-child {
+/* body > ul > li:first-child {
   background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 /* add logo to bears information */
-body > ul > li:last-child {
+/* body > ul > li:last-child {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
+
 
 /* Removed miniture image from corner of team info */
-img {
+/* img {
   display: none;
+} */
+
+/* Move image to center of list and use opacity to fade */
+img {
+ width: 165px;
+ height: 145px;
+ opacity: .3;
+ position: absolute;
+ down: 90px;
+ left: 50px;
+}
+
+/* Make the first quarterback bold font  */
+ul li li ol li:first-child {
+  font-weight: bold;
 }
