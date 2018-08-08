@@ -1,55 +1,61 @@
+
+/* Make all headers black text and sans serif font */
 h1, h2, h3{
   color: black;
   font-family: sans-serif;
 }
 
+/* Make table, table headers, and table data in a border and centered */
 table, th, td{
   text-align: center;
   border-style: ridge;
 }
 
-/* table {
-border-style: ridge;
-} */
-
+/* Make table headers bold text with red font */
 th{
   font-weight: bold;
   color: red;
 }
 
+/* Make lists square bullet points */
 li{
     list-style-type: square;
 }
 
+/* Made links change color, get rid of underline, and changed the backround color
+when hovered over */
 .hyperLink:hover {
   background-color: navy;
   color: white;
   text-decoration: none;
 }
 
+/* Changed the second paragraph blockquote into vivid text over a dark backround color */
 blockquote {
   background-color: black;
   color: lightgreen;
 }
 
+/* Removed bullet points from the checkbox grid form */
 #checkbox-grid li{
   list-style-type: none;
 }
 
+/* Add logo to broncos information */
 body > ul > li:first-child {
   background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+/* add logo to bears information */
 body > ul > li:last-child {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
-
-
 }
 
+/* Removed miniture image from corner of team info */
 img {
   display: none;
 }
